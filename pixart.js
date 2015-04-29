@@ -15,9 +15,12 @@ function setBrushColor(event) {
 
 button.addEventListener("click", setBrushColor);
 
-for(var i = 0; i < 20; i++) {
+for(var i = 0; i < 8000; i++) {
   var newDiv = document.createElement("div");
   newDiv.classList.add("square");
-  newDiv.addEventListener("click", function(){ this.style.backgroundColor = color; })
+  newDiv.addEventListener("mouseover", function(){ this.style.backgroundColor = color; })
   document.querySelector("body").appendChild(newDiv);
 }
+
+// Change the event that changes your box colors from 'click' to 'mouseover'
+// Paint a picture!
