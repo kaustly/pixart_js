@@ -17,5 +17,10 @@ button.addEventListener("click", setBrushColor);
 for(var i = 0; i < 20; i++) {
   var newDiv = document.createElement("div");
   newDiv.classList.add("square");
+  newDiv.addEventListener("click", function(){ this.style.backgroundColor = "green"; })
   document.querySelector("body").appendChild(newDiv);
 }
+
+
+// Add functionality so that when I click on each "square", it changes the
+// color of that individual square to "green"
