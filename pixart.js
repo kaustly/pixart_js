@@ -12,3 +12,10 @@ function setBrushColor(event) {
 }
 
 button.addEventListener("click", setBrushColor);
+
+// Using JavaScript, create 20 divs of the "square" class and append them to the body
+for(var i = 0; i < 20; i++) {
+  var newDiv = document.createElement("div");
+  newDiv.classList.add("square");
+  document.querySelector("body").appendChild(newDiv);
+}
