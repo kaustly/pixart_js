@@ -4,23 +4,20 @@
 var button = document.querySelector("#set-color");
 var colorField = document.querySelector("#color-field");
 var brush = document.querySelector(".brush");
+var color = "#1B4370";
 
 function setBrushColor(event) {
       event.preventDefault();
       var newColor = colorField.value;
       brush.style.backgroundColor = newColor;
+      color = newColor;
 }
 
 button.addEventListener("click", setBrushColor);
 
-// Using JavaScript, create 20 divs of the "square" class and append them to the body
 for(var i = 0; i < 20; i++) {
   var newDiv = document.createElement("div");
   newDiv.classList.add("square");
-  newDiv.addEventListener("click", function(){ this.style.backgroundColor = "green"; })
+  newDiv.addEventListener("click", function(){ this.style.backgroundColor = color; })
   document.querySelector("body").appendChild(newDiv);
 }
-
-
-// Add functionality so that when I click on each "square", it changes the
-// color of that individual square to "green"
