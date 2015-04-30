@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Monoton);
 
+.canvas {
+  width: 300px;
+  -webkit-user-select: none;
+  margin: 15px auto;
+}
+
 .brush {
   width: 100px;
   height: 100px;
@@ -7,10 +13,27 @@
   margin: 15px auto;
 }
 
+.past-brush {
+  width: 50px;
+  height: 50px;
+  margin: 15px 15px;
+  float: left;
+}
+
+.brush-list {
+  width: 300px;
+  height: 75px;
+  margin: 10px auto;
+  border: 1px solid black;
+  overflow: scroll;
+  padding-left: 20px;
+}
+
+
 .square {
   float: left;
-  width: 10px;
-  height: 10px;
+  width: 2px;
+  height: 2px;
   background: #E7E5DB;
   margin: 0;
 }
