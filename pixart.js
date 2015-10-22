@@ -4,8 +4,11 @@ $(document).ready(function(){
     console.log("I was clicked");
     $("#color-field").val();
     $(".brush").css("background-color", $("#color-field").val());
-
   })
+  for (var i = 0; i < 20; i++) {
+    $("body").append("<div class ='square'></div>"); 
+  }
+
 
 })
 
